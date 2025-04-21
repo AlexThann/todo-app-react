@@ -8,7 +8,7 @@ function TodoContainer() {
     if(previousTheme==null) return "dark";
     return JSON.parse(previousTheme);
   });
-  const [themeUrl,setThemeUrl] = useState("./images/icon-sun.svg");
+  const [themeUrl,setThemeUrl] = useState(`${import.meta.env.BASE_URL}images/icon-sun.svg`);
 
 
   useEffect(()=>{
@@ -20,11 +20,11 @@ function TodoContainer() {
       if(theme==="dark"){
         mainContainer.classList.remove("light-theme");
         mainContainer.classList.add("dark-theme");
-        setThemeUrl((currentThemeUrl)=>{return "./images/icon-sun.svg"});
+        setThemeUrl((currentThemeUrl)=>{return `${import.meta.env.BASE_URL}images/icon-sun.svg`});
       }else{
         mainContainer.classList.remove("dark-theme");
         mainContainer.classList.add("light-theme");
-        setThemeUrl((currentThemeUrl)=>{return "./images/icon-moon.svg"});
+        setThemeUrl((currentThemeUrl)=>{return `${import.meta.env.BASE_URL}images/icon-moon.svg`});
       }
     }
     ,[theme]);

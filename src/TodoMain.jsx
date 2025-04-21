@@ -99,7 +99,7 @@ function TodoMain(){
                                     <span className="custom-checkbox"></span>
                                     <span className="todo-name">{todo.title}</span>
                                 </label>
-                                <img src="./images/icon-cross.svg" alt="" className="delete-button" onClick={()=>{deleteItem(todo.id)}}/>
+                                <img src={`${import.meta.env.BASE_URL}images/icon-cross.svg`} alt="" className="delete-button" onClick={()=>{deleteItem(todo.id)}}/>
                         </li>
                         })}
                 </ul>

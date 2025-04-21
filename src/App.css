@@ -13,8 +13,8 @@
 
 
 .light-theme{
-    --url:url("./images/bg-desktop-light.jpg");
-    --url-mob:url("./images/bg-mobile-light.jpg");
+    --url:url("/images/bg-desktop-light.jpg");
+    --url-mob:url("/images/bg-mobile-light.jpg");
     --bg-color:hsl(0, 0%, 98%);
     --todo-bg:hsl(0, 0%, 98%);
     --font-color:hsl(235, 19%, 35%);
@@ -26,8 +26,8 @@
 }
 
 .dark-theme{
-    --url:url("./images/bg-desktop-dark.jpg");
-    --url-mob:url("./images/bg-mobile-dark.jpg");
+    --url:url("/images/bg-desktop-dark.jpg");
+    --url-mob:url("/images/bg-mobile-dark.jpg");
     --bg-color:hsl(235, 21%, 11%);
     --todo-bg:hsl(235,24%,19%);
     --font-color:hsl(236, 33%, 92%);
@@ -209,7 +209,7 @@
     transform: translate(-50%, -50%);
     width: 12px;
     height: 12px;
-    background: url('./images/icon-check.svg') no-repeat center center;
+    background: url('/images/icon-check.svg') no-repeat center center;
     background-size: contain;
     animation: opac 0.2s linear 1 forwards;
   }
