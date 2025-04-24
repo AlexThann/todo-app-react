@@ -4,15 +4,15 @@ import TodoMain from "./TodoMain.jsx";
 function TodoContainer() {
 
   const [theme,setTheme] = useState(()=>{
-    const previousTheme=localStorage.getItem("THEME");
+    const previousTheme=localStorage.getItem("THEMETODO");
     if(previousTheme==null) return "dark";
-    return JSON.parse(previousTheme);
+    return previousTheme;
   });
   const [themeUrl,setThemeUrl] = useState(`${import.meta.env.BASE_URL}images/icon-sun.svg`);
 
 
   useEffect(()=>{
-    localStorage.setItem("THEME",JSON.stringify(theme));
+    localStorage.setItem("THEMETODO",theme);
   },[theme]);
  
   useEffect(()=>{
