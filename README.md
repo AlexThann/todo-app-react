@@ -11,3 +11,5 @@ chosen theme and todos.
 ![image](https://github.com/user-attachments/assets/3a09e4a1-2a50-4121-a783-1aa3593b3d53)
 
 
+## Live Site URL:
+https://alexthann.github.io/todo-app-react/
